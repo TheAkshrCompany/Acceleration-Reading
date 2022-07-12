@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Accelerator reading"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Xaxis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:layout_centerHorizontal="true"
+        android:text="X:"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/Yaxis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Xaxis"
+        android:layout_centerHorizontal="true"
+        android:text="Y:"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/Zaxis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Yaxis"
+        android:layout_centerHorizontal="true"
+        android:text="Z:"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/Xaxisvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:text="232323"
+        android:layout_toRightOf="@id/Xaxis"
+        android:textSize="25sp" />
+    <TextView
+    android:id="@+id/Yaxisvalue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/Xaxisvalue"
+    android:text="232323"
+    android:layout_toRightOf="@id/Yaxis"
+    android:textSize="25sp" />
+    <TextView
+    android:id="@+id/Zaxisvalue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/Yaxisvalue"
+    android:text="232323"
+    android:layout_toRightOf="@id/Zaxis"
+    android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/startReading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Zaxis"
+        android:onClick="StartReading"
+        android:text="Starting reading" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Zaxis"
+        android:onClick="save"
+        android:layout_toRightOf="@+id/startReading"
+        android:text="save to disk" />
+    <TextView
+        android:layout_below="@id/startReading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data will be saved in "
+        android:id="@+id/location1"
+        />
+
+    <TextView
+        android:id="@+id/savelocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startReading"
+        android:layout_toRightOf="@id/location1"
+        android:clickable="true"
+        android:text="Acceleration Reading folder"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textStyle="italic" />
+
+</RelativeLayout>
